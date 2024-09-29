@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">BikeWorld</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#specifications">Specifications</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-in">
+        <div class="hero-content">
+            <h1 class="animated-text">The Ultimate Bike Experience</h1>
+            <p class="animated-text">Feel the thrill of the road with our all-new high-performance bike, designed for speed, comfort, and adventure.</p>
+            <button class="cta-button animated-text"><a href="#contact">Buy Now</a></button>
+
+        </div>
+        <div class="hero-image" data-aos="fade-up">
+            <img src="bike7.jpeg" alt="Bike Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" data-aos="fade-up">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature" data-aos="fade-left">
+                <h3>Lightweight Frame</h3>
+                <p>Built with a durable yet lightweight aluminum frame for superior control.</p>
+            </div>
+            <div class="feature" data-aos="fade-right">
+                <h3>Aerodynamic Design</h3>
+                <p>Streamlined design to reduce drag and improve speed on any terrain.</p>
+            </div>
+            <div class="feature" data-aos="fade-left">
+                <h3>Advanced Suspension</h3>
+                <p>Experience a smooth ride even on the roughest roads with our advanced suspension system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="bike.jpeg" alt="Bike Image 1">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="bike1.jpeg" alt="Bike Image 2">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="bike2.jpeg" alt="Bike Image 3">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="bike3.jpeg" alt="Bike Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="specifications" data-aos="fade-up">
+        <h2>Specifications</h2>
+        <ul>
+            <li>Frame Material: Aluminum Alloy</li>
+            <li>Wheel Size: 29 inches</li>
+            <li>Gears: 21-speed Shimano gears</li>
+            <li>Weight: 12.5 kg</li>
+            <li>Brakes: Hydraulic disc brakes</li>
+            <li>Suspension: Front and rear shock absorbers</li>
+        </ul>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews" data-aos="fade-up">
+        <h2>What Our Riders Say</h2>
+        <div class="review" data-aos="fade-left">
+            <p>"This bike has exceeded my expectations! It's fast, smooth, and perfect for long rides."</p>
+            <span>- Alex Johnson</span>
+        </div>
+        <div class="review" data-aos="fade-right">
+            <p>"The aerodynamic design really makes a difference. I feel like I'm flying on the road."</p>
+            <span>- Sarah Williams</span>
+        </div>
+        <div class="review" data-aos="fade-left">
+            <p>"The suspension system is fantastic. It handles rough trails like a breeze!"</p>
+            <span>- Mark Green</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Get Yours Today</h2>
+        <p>Contact us to place your order or find a dealer near you.</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2024 BikeWorld. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Header Transition Script -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
